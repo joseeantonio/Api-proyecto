@@ -60,7 +60,7 @@ const deleteOneUser = (id) => {
   const user = usuarioDeleted;
 
   const newArr = datos.users.filter(function (item) {
-    return item.idUser !== id;
+    return item.id !== id;
   });
   //BORRAR USUARIO
   datos.users = newArr;

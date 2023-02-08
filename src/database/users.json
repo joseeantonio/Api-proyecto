@@ -1,26 +1,15 @@
 {
-
-
   "users": [
-
     {
       "id": "48a04480-a6f3-11ed-9765-81a6d4d08d38",
       "name": "jose",
       "mail": "jose@gmail.com",
       "pwd": "password"
-
     },
     {
       "id": "5ae87180-a6f3-11ed-bf15-6fe95562dcaf",
       "name": "pepe",
       "mail": "pepeh@gmail.com",
-      "pwd": "password"
-
-    },
-    {
-      "id": "c113eee0-a6d4-11ed-bd56-b5715859c8df",
-      "name": "mario",
-      "mail": "mario@gmail.com",
       "pwd": "password"
     }
   ]
