@@ -25,8 +25,8 @@ const insertUser = (nombre, mail, pwd) => {
   return usuarioInsertado;
 };
 
-const getUser = (idUser) => {
-  const oneUsuario = userModelos.getOneUser(idUser);
+const getUser = (id) => {
+  const oneUsuario = userModelos.getOneUser(id);
   return oneUsuario;
 };
 

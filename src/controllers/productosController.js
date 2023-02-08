@@ -30,9 +30,9 @@ const insertOneProduct = (req, res, next) => {
 
 };
 const getOneProduct = (req, res, next) => {
-  const { prod } = req.params;
+  const { id } = req.params;
 
-  const oneProduct = productosServices.getOneProduct(prod);
+  const oneProduct = productosServices.getOneProduct(id);
 
   if (!oneProduct) {
     res.status(404).send("NO ENCONTRADO");

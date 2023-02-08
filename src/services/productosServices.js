@@ -30,8 +30,8 @@ const insertOneProduct = (size,name,description,image,category,marca) => {
   return insertedProduct;
 };
 
-const getOneProduct = (nombreProducto) => {
-  const oneProduct = productosModelo.getOneProduct(nombreProducto);
+const getOneProduct = (idProducto) => {
+  const oneProduct = productosModelo.getOneProduct(idProducto);
 
   return oneProduct;
 };

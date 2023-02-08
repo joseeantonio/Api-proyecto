@@ -5,8 +5,8 @@ const getAllUsers = () => {
   return datos.users;
 };
 
-const getOneUser = (idUser) => {
-  return datos.users[idUser];
+const getOneUser = (id) => {
+  return datos.users[id];
 };
 
 const insertOneUser = (newUser) => {

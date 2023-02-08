@@ -5,8 +5,11 @@ const getAllProduct = () => {
   return datos.productos;
 };
 
-const getOneProduct = (nombreProducto) => {
-  return datos.productos[nombreProducto];
+const getOneProduct = (id) => {
+  var product = datos.productos.find((objeto) => {
+    return objeto.id === id;
+  });
+  return product
 };
 
 const insertOneProduct = (newProduct) => {
