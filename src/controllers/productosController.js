@@ -42,9 +42,9 @@ const getOneProduct = (req, res, next) => {
 };
 const deleteOneProduct = (req, res, next) => {
     const { id } = req.params;
-    console.log(id);
+    // console.log(id);
     const deletedProduct = productosServices.deleteOneProduct(id);
-    console.log(deletedProduct);
+    // console.log(deletedProduct);
     if (!deletedProduct) {
         res.status(404).send("PRODUCTO NO ENCONTRADO");
         return;

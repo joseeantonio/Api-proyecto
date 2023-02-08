@@ -9,7 +9,7 @@ router
   .get(productosController.getAllProduct) //GET ALL PRODUCTS
   .post(productosController.insertOneProduct); //INSERT ONE PRODUCT
 
-router.route("/:prod")
+router.route("/:id")
     .get(productosController.getOneProduct) //GET ONE PRODUCT
     .delete(productosController.deleteOneProduct) //DELETE ONE PRODUCT
     .put() //UPDATE ONE PRODUT

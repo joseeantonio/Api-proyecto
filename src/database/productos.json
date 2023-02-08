@@ -1,46 +1,10 @@
 {
   "productos": [
     {
-      "id": 20,
-      "size": 300,
-      "name": "press banca",
-      "description": "descripciooooooooooon2",
-      "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/1.png",
-      "category": "peso libre",
-      "marca": "Matrix"
-    },
-    {
-      "id": 20,
-      "size": 300,
-      "name": "press banca",
-      "description": "descripciooooooooooon2",
-      "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/1.png",
-      "category": "peso libre",
-      "marca": "Hammer"
-    },
-    {
-      "id": "6a061040-a7a8-11ed-b1e0-197ca840b5a1",
-      "size": 300,
-      "name": "press banaaa",
-      "description": "descripciooooooooooon2",
-      "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/1.png",
-      "category": "peso libre",
-      "marca": "Hammer"
-    },
-    {
-      "id": "d3a4fbf0-a7a9-11ed-bdcf-51e8fcba235a",
-      "size": 300,
-      "name": "press banaaa",
-      "description": "descripciooooooooooon2",
-      "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/1.png",
-      "category": "peso libre",
-      "marca": "Hammer"
-    },
-    {
       "id": "d4230590-a7a9-11ed-ad06-6f5a2216e7e3",
       "size": 300,
-      "name": "press banaaa",
-      "description": "descripciooooooooooon2",
+      "name": "press banca plano",
+      "description": "pechitopechito",
       "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/1.png",
       "category": "peso libre",
       "marca": "Hammer"
@@ -48,8 +12,8 @@
     {
       "id": "d492de60-a7a9-11ed-8ebf-e968c85e29df",
       "size": 300,
-      "name": "press banaaa",
-      "description": "descripciooooooooooon2",
+      "name": "banco",
+      "description": "banquito",
       "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/1.png",
       "category": "peso libre",
       "marca": "Hammer"
