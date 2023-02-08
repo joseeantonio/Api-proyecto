@@ -3,7 +3,7 @@
     {
       "id": "d4230590-a7a9-11ed-ad06-6f5a2216e7e3",
       "size": 300,
-      "name": "press banca plano",
+      "name": "press banca inclinado",
       "description": "pechitopechito",
       "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/1.png",
       "category": "peso libre",
@@ -17,6 +17,15 @@
       "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/1.png",
       "category": "peso libre",
       "marca": "Hammer"
+    },
+    {
+      "id": "b1003e20-a7d1-11ed-a290-772390db3dc2",
+      "size": 3500,
+      "name": "maquina de aperturas",
+      "description": "pechito pechito",
+      "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/1.png",
+      "category": "peso guiado",
+      "marca": "Matrix"
     }
   ]
 }

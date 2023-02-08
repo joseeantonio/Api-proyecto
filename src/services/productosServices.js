@@ -1,5 +1,6 @@
 const productosModelo = require("../database/productosModelo");
 const { v1: uuid } = require("uuid");
+const userModelos = require("../database/usersModelo");
 
 //LOGICA DE NEGOCIO
 
@@ -40,7 +41,11 @@ const deleteOneProduct = (id) => {
   const product = productosModelo.deleteOneProduct(id);
   return product
 };
-const updateOneProduct = () => {};
+const updateOneProduct = (id,size,name,description,image,category,marca) => {
+  const product = productosModelo.updateOneProduct(id,size,name,description,image,category,marca);
+
+  return product;
+};
 
 module.exports = {
   getAllProduct,

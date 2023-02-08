@@ -52,7 +52,13 @@ const deleteOneProduct = (req, res, next) => {
     res.send(deletedProduct);
 };
 const updateOneProduct = (req, res, next) => {
-  res.send("update PRODUCTS");
+    const { id } = req.params;
+    const {size,name,description,image,category,marca} = req.body;
+    console.log(req.body);
+
+    const updateProduct = productosServices.updateOneProduct(id,size,name,description,image,category,marca);
+
+    res.send(updateProduct);
 };
 
 module.exports = {

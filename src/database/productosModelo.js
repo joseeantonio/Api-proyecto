@@ -54,9 +54,49 @@ const deleteOneProduct = (id) => {
   return product;
 }
 
+
+const updateOneProduct = (id,size,name,description,image,category,marca) => {
+
+  const productToBeUpdatedIndex = datos.productos.findIndex((objeto) => {
+    return objeto.id === id;
+  });
+  console.log(name);
+  console.log(datos.productos[productToBeUpdatedIndex]);
+  if (name) {
+    datos.productos[productToBeUpdatedIndex].name = name;
+  }
+
+  if (size) {
+    datos.productos[productToBeUpdatedIndex].size = size;
+  }
+
+  if (description) {
+    datos.productos[productToBeUpdatedIndex].description = description;
+  }
+  if (image) {
+    datos.productos[productToBeUpdatedIndex].image = image;
+  }
+  if (category) {
+    datos.productos[productToBeUpdatedIndex].category = category;
+  }
+  if (marca) {
+    datos.productos[productToBeUpdatedIndex].marca = marca;
+  }
+
+  fs.writeFile(
+      "./src/database/productos.json",
+      JSON.stringify(datos, null, 2),
+      "utf8",
+      (err) => {
+        throw new Error("ERROR AL BORRAR PRODUCTO");
+      }
+  );
+}
+
 module.exports = {
   getAllProduct,
   getOneProduct,
   insertOneProduct,
   deleteOneProduct,
+  updateOneProduct,
 };

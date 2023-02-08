@@ -12,7 +12,7 @@ router
 router.route("/:id")
     .get(productosController.getOneProduct) //GET ONE PRODUCT
     .delete(productosController.deleteOneProduct) //DELETE ONE PRODUCT
-    .put() //UPDATE ONE PRODUT
+    .put(productosController.updateOneProduct) //UPDATE ONE PRODUT
 
 
 
