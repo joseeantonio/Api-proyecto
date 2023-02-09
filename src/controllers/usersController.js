@@ -30,10 +30,10 @@ const insertOneUser = (req, res, next) => {
 };
 
 const getOneUser = (req, res, next) => {
-  const { usuario } = req.params;
+  const { id } = req.params;
 
   debugger
-  const oneUser = usersServices.getUser(usuario.id);
+  const oneUser = usersServices.getUser(id);
   if (!oneUser) {
     res.status(404).send("NO ENCONTRADO");
     return;

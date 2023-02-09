@@ -6,7 +6,10 @@ const getAllUsers = () => {
 };
 
 const getOneUser = (id) => {
-  return datos.users[id];
+  var user = datos.users.find((objeto) => {
+    return objeto.id === id;
+  });
+  return user
 };
 
 const insertOneUser = (newUser) => {
