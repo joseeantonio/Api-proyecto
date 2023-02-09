@@ -59,6 +59,12 @@ const getAllProductCategory = (category) => {
   return products
 }
 
+const getAllProductBusqueda = (busqueda) => {
+  const  products = productosModelo.getAllProductBusqueda(busqueda)
+
+  return products
+}
+
 module.exports = {
   getAllProduct,
   insertOneProduct,
@@ -67,4 +73,5 @@ module.exports = {
   updateOneProduct,
   getAllProductMarca,
   getAllProductCategory,
+  getAllProductBusqueda,
 };

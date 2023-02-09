@@ -108,6 +108,17 @@ const getAllProductCategory = (category) => {
   return newArr
 }
 
+const getAllProductBusqueda = (busqueda) => {
+
+  var busquedaFinal = busqueda.replace("-"," ")
+  const newArr = datos.productos.filter(function (item) {
+
+    return item.name.includes(busquedaFinal)
+  })
+  return newArr
+}
+
+
 module.exports = {
   getAllProduct,
   getOneProduct,
@@ -116,4 +127,5 @@ module.exports = {
   updateOneProduct,
   getAllProductMarca,
   getAllProductCategory,
+  getAllProductBusqueda
 };

@@ -76,6 +76,13 @@ const getAllProductCategory = (req,res,next) => {
     res.send(categoryProduct)
 }
 
+const getAllProductBusqueda = (req,res,next) => {
+    const { busqueda } = req.params;
+
+    const busquedaProduct = productosServices.getAllProductBusqueda(busqueda)
+    res.send(busquedaProduct)
+}
+
 module.exports = {
   getAllProduct,
   insertOneProduct,
@@ -84,4 +91,5 @@ module.exports = {
   updateOneProduct,
     getAllProductMarca,
     getAllProductCategory,
+    getAllProductBusqueda,
 };

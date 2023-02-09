@@ -22,6 +22,9 @@ router.route("/marca/:marca")
 router.route("/category/:category")
     .get(productosController.getAllProductCategory)
 
+router.route("/busqueda/:busqueda")
+    .get(productosController.getAllProductBusqueda)
+
 
 
 module.exports.router = router
