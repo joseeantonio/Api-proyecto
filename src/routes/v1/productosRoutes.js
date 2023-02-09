@@ -15,10 +15,12 @@ router.route("/:id")
     .put(productosController.updateOneProduct) //UPDATE ONE PRODUT
 
 
+//peso-libre   ||    peso-guiado
 router.route("/marca/:marca")
     .get(productosController.getAllProductMarca)
 
-
+router.route("/category/:category")
+    .get(productosController.getAllProductCategory)
 
 
 

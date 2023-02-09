@@ -53,6 +53,12 @@ const getAllProductMarca = (marca) => {
   return products
 }
 
+const getAllProductCategory = (category) => {
+  const products = productosModelo.getAllProductCategory(category)
+
+  return products
+}
+
 module.exports = {
   getAllProduct,
   insertOneProduct,
@@ -60,4 +66,5 @@ module.exports = {
   deleteOneProduct,
   updateOneProduct,
   getAllProductMarca,
+  getAllProductCategory,
 };

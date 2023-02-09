@@ -97,7 +97,14 @@ const getAllProductMarca = (marca) => {
   const newArr = datos.productos.filter(function (item) {
     return item.marca === marca;
   });
-  console.log(newArr)
+  return newArr
+}
+
+const getAllProductCategory = (category) => {
+  const newArr = datos.productos.filter(function (item) {
+    var categoryFinal = category.replace("-"," ")
+    return item.category === categoryFinal;
+  });
   return newArr
 }
 
@@ -108,4 +115,5 @@ module.exports = {
   deleteOneProduct,
   updateOneProduct,
   getAllProductMarca,
+  getAllProductCategory,
 };
