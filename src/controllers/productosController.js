@@ -61,10 +61,19 @@ const updateOneProduct = (req, res, next) => {
     res.send(updateProduct);
 };
 
+const getAllProductMarca = (req,res,next) => {
+    const { marca } = req.params;
+
+    const marcaProduct = productosServices.getAllProductMarca(marca)
+
+    res.send(marcaProduct)
+}
+
 module.exports = {
   getAllProduct,
   insertOneProduct,
   getOneProduct,
   deleteOneProduct,
   updateOneProduct,
+    getAllProductMarca,
 };

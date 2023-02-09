@@ -47,10 +47,17 @@ const updateOneProduct = (id,size,name,description,image,category,marca) => {
   return product;
 };
 
+const getAllProductMarca = (marca) => {
+  const products = productosModelo.getAllProductMarca(marca)
+
+  return products
+}
+
 module.exports = {
   getAllProduct,
   insertOneProduct,
   getOneProduct,
   deleteOneProduct,
   updateOneProduct,
+  getAllProductMarca,
 };

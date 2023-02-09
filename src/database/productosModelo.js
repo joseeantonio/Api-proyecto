@@ -93,10 +93,19 @@ const updateOneProduct = (id,size,name,description,image,category,marca) => {
   );
 }
 
+const getAllProductMarca = (marca) => {
+  const newArr = datos.productos.filter(function (item) {
+    return item.marca === marca;
+  });
+  console.log(newArr)
+  return newArr
+}
+
 module.exports = {
   getAllProduct,
   getOneProduct,
   insertOneProduct,
   deleteOneProduct,
   updateOneProduct,
+  getAllProductMarca,
 };

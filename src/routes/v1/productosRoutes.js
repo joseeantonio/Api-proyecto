@@ -15,5 +15,11 @@ router.route("/:id")
     .put(productosController.updateOneProduct) //UPDATE ONE PRODUT
 
 
+router.route("/marca/:marca")
+    .get(productosController.getAllProductMarca)
+
+
+
+
 
 module.exports.router = router
