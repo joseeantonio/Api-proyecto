@@ -6,18 +6,19 @@ const getUsers = () => {
   return usuarios;
 };
 
-const insertUser = (nombre, mail, pwd) => {
-  const idUser = uuid();
-  const fecha_alta = new Date().toLocaleDateString();
+const insertUser = (name,surname, email, password,username ) => {
+  const id = uuid();
 
   const nuevoUsuario = {
-    idUser,
-    nombre,
-    mail,
-    pwd,
+    id,
+    name,
+    surname,
+    email,
+    password,
+    username
   };
 
-  if (userModelos.getOneUser(nuevoUsuario.idUser)) {
+  if (userModelos.getOneUser(nuevoUsuario.id)) {
     return false;
   }
 

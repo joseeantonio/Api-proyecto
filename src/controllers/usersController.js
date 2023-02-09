@@ -13,14 +13,14 @@ const insertOneUser = (req, res, next) => {
   console.log(req.body);
   console.log(req.body);
 
-  const { name, email, password } = req.body;
+  const { name,surname, email, password,username } = req.body;
   console.log(name);
-  if (!name || !email || !password) {
+  if (!name || !surname || !email || !password || !username) {
     res.status(400).send("FALTAN DATOS PORA INSERTAR USUARIIOS");
     return;
   }
 
-  const newUser = usersServices.insertUser(name, email, password);
+  const newUser = usersServices.insertUser(name,surname, email, password,username );
   if (!newUser) {
     res.status(400).send("ENTRADA DUPLICADA");
     return;

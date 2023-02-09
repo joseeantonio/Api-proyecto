@@ -3,14 +3,26 @@
     {
       "id": "48a04480-a6f3-11ed-9765-81a6d4d08d38",
       "name": "jose",
-      "mail": "jose@gmail.com",
-      "pwd": "password"
+      "surname": "Gonzalez",
+      "email": "jose@gmail.com",
+      "password": "password",
+      "username": "joselito02"
     },
     {
       "id": "5ae87180-a6f3-11ed-bf15-6fe95562dcaf",
       "name": "pepe",
-      "mail": "pepeh@gmail.com",
-      "pwd": "password"
+      "surname": "Perez",
+      "email": "pepeh@gmail.com",
+      "password": "password",
+      "username": "pepitto032"
+    },
+    {
+      "id": "85571110-a84c-11ed-b5f9-29744be14238",
+      "name": "josefina",
+      "surname": "Fernandez",
+      "email": "josefina@gmail.com",
+      "password": "password",
+      "username": "josefina02"
     }
   ]
 }
