@@ -26,24 +26,29 @@ const insertOneUser = (newUser) => {
   return newUser;
 };
 
-const updateOneUser = (id, name, mail, pwd) => {
+const updateOneUser = (id, name,surname, email, password,username) => {
   console.log(id);
   const userToBeUpdatedIndex = datos.users.findIndex((objeto) => {
-    return objeto.idUser === id;
+    return objeto.id === id;
   });
-  console.log(name);
-  console.log(datos.users[userToBeUpdatedIndex]);
   if (name) {
-    datos.users[userToBeUpdatedIndex].nombre = name;
-  }
-  console.log(mail);
-
-  if (mail) {
-    datos.users[userToBeUpdatedIndex].mail = mail;
+    datos.users[userToBeUpdatedIndex].name = name;
   }
 
-  if (pwd) {
-    datos.users[userToBeUpdatedIndex].pwd = pwd;
+  if (email) {
+    datos.users[userToBeUpdatedIndex].email = email;
+  }
+
+  if (password) {
+    datos.users[userToBeUpdatedIndex].password = password;
+  }
+
+  if (username) {
+    datos.users[userToBeUpdatedIndex].username = username;
+  }
+
+  if (surname) {
+    datos.users[userToBeUpdatedIndex].surname = surname;
   }
 
   fs.writeFile(
