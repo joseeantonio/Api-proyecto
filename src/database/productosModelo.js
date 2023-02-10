@@ -5,6 +5,21 @@ const getAllProduct = () => {
   return datos.productos;
 };
 
+const getAllProductLimit = (limite) => {
+  const newArr = []
+  const array = datos.productos
+
+  for (let i=0;i<array.length;i++){
+    if (newArr.length<limite){
+      newArr.push(array[i])
+    }
+  }
+  // console.log(newArr.length)
+
+  return newArr
+
+}
+
 const getOneProduct = (id) => {
   var product = datos.productos.find((objeto) => {
     return objeto.id === id;
@@ -127,5 +142,6 @@ module.exports = {
   updateOneProduct,
   getAllProductMarca,
   getAllProductCategory,
-  getAllProductBusqueda
+  getAllProductBusqueda,
+  getAllProductLimit,
 };

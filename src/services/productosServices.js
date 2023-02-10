@@ -31,6 +31,12 @@ const insertOneProduct = (size,name,description,image,category,marca) => {
   return insertedProduct;
 };
 
+const getAllProductLimit = (limite) => {
+  const products = productosModelo.getAllProductLimit(limite)
+
+  return products
+}
+
 const getOneProduct = (idProducto) => {
   const oneProduct = productosModelo.getOneProduct(idProducto);
 
@@ -74,4 +80,5 @@ module.exports = {
   getAllProductMarca,
   getAllProductCategory,
   getAllProductBusqueda,
+  getAllProductLimit,
 };

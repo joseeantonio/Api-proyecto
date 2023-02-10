@@ -10,6 +10,9 @@ const getAllProduct = (req, res, next) => {
   }
   res.send(allProducts);
 };
+
+
+
 const insertOneProduct = (req, res, next) => {
 
     console.log(req.body)
@@ -29,6 +32,21 @@ const insertOneProduct = (req, res, next) => {
     res.send(newProduct)
 
 };
+
+const getAllProductLimit = (req, res, next) => {
+    const { limite } = req.params;
+
+    const products = productosServices.getAllProductLimit(limite);
+
+    if (products.length===0) {
+        res.status(404).send("Limite incorrecto");
+        return;
+    }
+
+    res.send(products)
+
+}
+
 const getOneProduct = (req, res, next) => {
   const { id } = req.params;
 
@@ -92,4 +110,5 @@ module.exports = {
     getAllProductMarca,
     getAllProductCategory,
     getAllProductBusqueda,
+    getAllProductLimit,
 };

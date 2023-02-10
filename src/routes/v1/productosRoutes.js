@@ -9,6 +9,10 @@ router
   .get(productosController.getAllProduct) //GET ALL PRODUCTS
   .post(productosController.insertOneProduct); //INSERT ONE PRODUCT
 
+router
+    .route('/paginacion/:limite')
+    .get(productosController.getAllProductLimit) //GET ALL PRODUCTS WITH LIMIT
+
 router.route("/:id")
     .get(productosController.getOneProduct) //GET ONE PRODUCT
     .delete(productosController.deleteOneProduct) //DELETE ONE PRODUCT
