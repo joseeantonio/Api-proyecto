@@ -108,6 +108,18 @@ const updateOneProduct = (id,size,name,description,image,category,marca) => {
   );
 }
 
+const getAllProductMarcaCategory = (marca,category) => {
+  console.log(marca)
+
+  const arrMarca = getAllProductMarca(marca)
+  console.log(arrMarca)
+  const newArr = arrMarca.filter(function (item) {
+    var categoryFinal = category.replace("-"," ")
+    return item.category === categoryFinal;
+  });
+  return newArr
+}
+
 const getAllProductMarca = (marca) => {
   const newArr = datos.productos.filter(function (item) {
     return item.marca === marca;
@@ -144,4 +156,5 @@ module.exports = {
   getAllProductCategory,
   getAllProductBusqueda,
   getAllProductLimit,
+  getAllProductMarcaCategory,
 };

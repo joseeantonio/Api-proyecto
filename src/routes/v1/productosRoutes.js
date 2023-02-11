@@ -23,6 +23,9 @@ router.route("/:id")
 router.route("/marca/:marca")
     .get(productosController.getAllProductMarca)
 
+router.route("/marca/:marca/:category")
+    .get(productosController.getAllProductMarcaCategory)
+
 router.route("/category/:category")
     .get(productosController.getAllProductCategory)
 

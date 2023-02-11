@@ -79,6 +79,15 @@ const updateOneProduct = (req, res, next) => {
     res.send(updateProduct);
 };
 
+const getAllProductMarcaCategory = (req,res,next) => {
+    const { category } = req.params;
+    const { marca } = req.params
+
+    const marcaCategoryProduct = productosServices.getAllProductMarcaCategory(marca,category)
+
+    res.send(marcaCategoryProduct)
+}
+
 const getAllProductMarca = (req,res,next) => {
     const { marca } = req.params;
 
@@ -111,4 +120,5 @@ module.exports = {
     getAllProductCategory,
     getAllProductBusqueda,
     getAllProductLimit,
+    getAllProductMarcaCategory,
 };
