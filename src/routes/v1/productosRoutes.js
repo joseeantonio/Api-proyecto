@@ -26,7 +26,7 @@ router.route("/marca/:marca")
 router.route("/marca/:marca/:precio")
     .get(productosController.getAllProductMarcaPrecio)
 
-router.route("/marca/:marca/:category")
+router.route("/marca/:marca/category/:category")
     .get(productosController.getAllProductMarcaCategory)
 
 router.route("/category/:category")

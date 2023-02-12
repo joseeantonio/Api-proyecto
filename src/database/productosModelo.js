@@ -152,9 +152,6 @@ const getAllProductMarcaPrecio = (marca,precio) => {
     return arrFinal
   }
 
-
-
-
 }
 
 const getAllProductMarcaCategory = (marca,category) => {
