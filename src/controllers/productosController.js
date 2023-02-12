@@ -79,6 +79,22 @@ const updateOneProduct = (req, res, next) => {
     res.send(updateProduct);
 };
 
+const getAllProductMarcaPrecio = (req,res,next) => {
+
+    const { precio } = req.params;
+    const { marca } = req.params
+
+    const marcaPrecioProduct = productosServices.getAllProductMarcaPrecio(marca,precio)
+
+    if (!marcaPrecioProduct) {
+        res.status(404).send("NO ENCONTRADO");
+        return;
+    }
+
+    res.send(marcaPrecioProduct)
+
+}
+
 const getAllProductMarcaCategory = (req,res,next) => {
     const { category } = req.params;
     const { marca } = req.params
@@ -93,6 +109,11 @@ const getAllProductMarca = (req,res,next) => {
 
     const marcaProduct = productosServices.getAllProductMarca(marca)
 
+    if (!marcaProduct) {
+        res.status(404).send("NO ENCONTRADO");
+        return;
+    }
+
     res.send(marcaProduct)
 }
 
@@ -100,6 +121,12 @@ const getAllProductCategory = (req,res,next) => {
     const { category } = req.params;
 
     const categoryProduct = productosServices.getAllProductCategory(category)
+
+    if (!categoryProduct) {
+        res.status(404).send("NO ENCONTRADO");
+        return;
+    }
+
     res.send(categoryProduct)
 }
 
@@ -107,6 +134,12 @@ const getAllProductBusqueda = (req,res,next) => {
     const { busqueda } = req.params;
 
     const busquedaProduct = productosServices.getAllProductBusqueda(busqueda)
+
+    if (!busquedaProduct) {
+        res.status(404).send("NO ENCONTRADO");
+        return;
+    }
+
     res.send(busquedaProduct)
 }
 
@@ -121,4 +154,5 @@ module.exports = {
     getAllProductBusqueda,
     getAllProductLimit,
     getAllProductMarcaCategory,
+    getAllProductMarcaPrecio,
 };

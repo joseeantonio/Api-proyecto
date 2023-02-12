@@ -53,6 +53,15 @@ const updateOneProduct = (id,size,name,description,image,category,marca) => {
   return product;
 };
 
+const getAllProductMarcaPrecio = (marca,precio) => {
+
+  const products = productosModelo.getAllProductMarcaPrecio(marca,precio)
+
+  return products
+
+}
+
+
 const getAllProductMarcaCategory = (marca,category) => {
   const products = productosModelo.getAllProductMarcaCategory(marca,category)
 
@@ -88,4 +97,5 @@ module.exports = {
   getAllProductBusqueda,
   getAllProductLimit,
   getAllProductMarcaCategory,
+  getAllProductMarcaPrecio,
 };

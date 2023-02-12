@@ -74,7 +74,7 @@
     },
     {
       "id": "b1003e20-a76d1-11ed-a290-772390db3dc2",
-      "size": 3500,
+      "size": 1,
       "name": "Press Banca Declinado",
       "description": "pechito pechito",
       "image": "https://i.imgur.com/JRxSwXd.png",
@@ -83,7 +83,7 @@
     },
     {
       "id": "b1003e20-a77d1-11ed-a290-772390db3dc2",
-      "size": 3500,
+      "size": 1,
       "name": "Prensa Pendular",
       "description": "pechito pechito",
       "image": "https://i.imgur.com/AZqzjMQ.png",
@@ -92,7 +92,7 @@
     },
     {
       "id": "b1003e20-a7d51-11ed-a290-772390db3dc1",
-      "size": 3500,
+      "size": 1000000,
       "name": "Prensa",
       "description": "pechito pechito",
       "image": "https://i.imgur.com/sDGYMgR.png",
@@ -128,7 +128,7 @@
     },
     {
       "id": "b31003e20-a7d1-11ed-a290-772390db3dc2",
-      "size": 3500,
+      "size": 1000000,
       "name": "Plataforma de impacto",
       "description": "pechito pechito",
       "image": "https://i.imgur.com/E7ya65c.png",

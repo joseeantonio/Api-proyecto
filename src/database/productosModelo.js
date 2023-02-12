@@ -108,6 +108,55 @@ const updateOneProduct = (id,size,name,description,image,category,marca) => {
   );
 }
 
+const getAllProductMarcaPrecio = (marca,precio) => {
+
+  const arrMarca = getAllProductMarca(marca)
+  const precios = []
+  const arrFinal = []
+  if (precio==='alto-bajo'){
+    for (let i=0; i<arrMarca.length; i++){
+      if (!precios.includes(arrMarca[i].size)){
+        precios.push(arrMarca[i].size)
+      }
+    }
+    precios.sort((a,b)=> a-b)
+    for (let i=0; precios.length>i; i++){
+      for (let x=0;arrMarca.length>x;x++){
+        if (precios[i]===arrMarca[x].size){
+          arrFinal.unshift(arrMarca[x])
+        }
+      }
+    }
+
+    return arrFinal
+    // const precioUnicos = [... new Set(arrMarca)]
+  }else if (precio==='bajo-alto'){
+
+    for (let i=0; i<arrMarca.length; i++){
+      if (!precios.includes(arrMarca[i].size)){
+        precios.push(arrMarca[i].size)
+      }
+    }
+    precios.sort((a,b)=> a-b)
+    for (let i=0; precios.length>i; i++){
+      for (let x=0;arrMarca.length>x;x++){
+        if (precios[i]===arrMarca[x].size){
+          arrFinal.push(arrMarca[x])
+        }
+      }
+    }
+
+    return arrFinal
+
+  }else{
+    return arrFinal
+  }
+
+
+
+
+}
+
 const getAllProductMarcaCategory = (marca,category) => {
   console.log(marca)
 
@@ -157,4 +206,5 @@ module.exports = {
   getAllProductBusqueda,
   getAllProductLimit,
   getAllProductMarcaCategory,
+  getAllProductMarcaPrecio,
 };
