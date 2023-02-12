@@ -181,13 +181,24 @@ const getAllProductCategory = (category) => {
   return newArr
 }
 
-const getAllProductBusqueda = (busqueda) => {
+const getAllProductBusqueda = (marca,busqueda) => {
 
-  var busquedaFinal = busqueda.replace("-"," ")
-  const newArr = datos.productos.filter(function (item) {
+  const arrMarca = getAllProductMarca(marca)
 
-    return item.name.includes(busquedaFinal)
-  })
+  var busquedaFinal = busqueda.replace("-"," ").toLowerCase()
+  console.log(busquedaFinal)
+  // const newArr = datos.productos.filter(function (item) {
+  //
+  //   return item.name.includes(busquedaFinal)
+  // })
+  const newArr = []
+
+  for (let i=0; i<arrMarca.length; i++){
+    if (arrMarca[i].name.toLowerCase().includes(busquedaFinal)){
+      newArr.push(arrMarca[i])
+    }
+  }
+
   return newArr
 }
 

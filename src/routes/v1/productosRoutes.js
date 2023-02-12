@@ -32,7 +32,7 @@ router.route("/marca/:marca/category/:category")
 router.route("/category/:category")
     .get(productosController.getAllProductCategory)
 
-router.route("/busqueda/:busqueda")
+router.route("/marca/:marca/busqueda/:busqueda")
     .get(productosController.getAllProductBusqueda)
 
 

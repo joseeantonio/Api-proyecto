@@ -132,8 +132,9 @@ const getAllProductCategory = (req,res,next) => {
 
 const getAllProductBusqueda = (req,res,next) => {
     const { busqueda } = req.params;
+    const { marca } = req.params;
 
-    const busquedaProduct = productosServices.getAllProductBusqueda(busqueda)
+    const busquedaProduct = productosServices.getAllProductBusqueda(marca,busqueda)
 
     if (!busquedaProduct) {
         res.status(404).send("NO ENCONTRADO");

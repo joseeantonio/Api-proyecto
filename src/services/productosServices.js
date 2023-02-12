@@ -80,8 +80,8 @@ const getAllProductCategory = (category) => {
   return products
 }
 
-const getAllProductBusqueda = (busqueda) => {
-  const  products = productosModelo.getAllProductBusqueda(busqueda)
+const getAllProductBusqueda = (marca,busqueda) => {
+  const  products = productosModelo.getAllProductBusqueda(marca,busqueda)
 
   return products
 }
