@@ -13,14 +13,14 @@ const insertOneUser = (req, res, next) => {
   console.log(req.body);
   console.log(req.body);
 
-  const { name,surname, email, password,username } = req.body;
+  const { email, password,username } = req.body;
   console.log(name);
-  if (!name || !surname || !email || !password || !username) {
+  if (!email || !password || !username) {
     res.status(400).send("FALTAN DATOS PORA INSERTAR USUARIIOS");
     return;
   }
 
-  const newUser = usersServices.insertUser(name,surname, email, password,username );
+  const newUser = usersServices.insertUser( email, password,username );
   if (!newUser) {
     res.status(400).send("ENTRADA DUPLICADA");
     return;
@@ -55,9 +55,9 @@ const deleteUser = (req, res, next) => {
 
 const updateUser = (req, res, next) => {
   const { id } = req.params;
-  const { name,surname, email, password,username } = req.body;
+  const { email, password,username } = req.body;
 
-  const updateUser = usersServices.updateOneUser(id,name,surname, email, password,username);
+  const updateUser = usersServices.updateOneUser(id, email, password,username);
 
   res.send(updateUser);
 };

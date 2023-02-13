@@ -2,17 +2,12 @@
   "users": [
     {
       "id": "48a04480-a6f3-11ed-9765-81a6d4d08d38",
-      "name": "josefina",
-      "surname": "Fernandez",
       "email": "josefina@gmail.com",
       "password": "password",
-      "username": "josefina02",
-      "nombre": "josefina"
+      "username": "josefina02"
     },
     {
       "id": "5ae87180-a6f3-11ed-bf15-6fe95562dcaf",
-      "name": "jose",
-      "surname": "Fernandez",
       "email": "jose@gmail.com",
       "password": "password",
       "username": "jose02"

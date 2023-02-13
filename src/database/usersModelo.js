@@ -31,9 +31,6 @@ const updateOneUser = (id, name,surname, email, password,username) => {
   const userToBeUpdatedIndex = datos.users.findIndex((objeto) => {
     return objeto.id === id;
   });
-  if (name) {
-    datos.users[userToBeUpdatedIndex].name = name;
-  }
 
   if (email) {
     datos.users[userToBeUpdatedIndex].email = email;
@@ -45,10 +42,6 @@ const updateOneUser = (id, name,surname, email, password,username) => {
 
   if (username) {
     datos.users[userToBeUpdatedIndex].username = username;
-  }
-
-  if (surname) {
-    datos.users[userToBeUpdatedIndex].surname = surname;
   }
 
   fs.writeFile(

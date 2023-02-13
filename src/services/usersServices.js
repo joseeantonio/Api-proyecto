@@ -6,13 +6,11 @@ const getUsers = () => {
   return usuarios;
 };
 
-const insertUser = (name,surname, email, password,username ) => {
+const insertUser = ( email, password,username ) => {
   const id = uuid();
 
   const nuevoUsuario = {
     id,
-    name,
-    surname,
     email,
     password,
     username
@@ -37,8 +35,8 @@ const deleteOneUser = (id) => {
   return user;
 };
 
-const updateOneUser = (id, name,surname, email, password,username) => {
-  const user = userModelos.updateOneUser(id, name,surname, email, password,username);
+const updateOneUser = (id, email, password,username) => {
+  const user = userModelos.updateOneUser(id, email, password,username);
   console.log(user);
   return user;
 };
