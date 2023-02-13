@@ -26,7 +26,7 @@ const insertOneUser = (newUser) => {
   return newUser;
 };
 
-const updateOneUser = (id, name,surname, email, password,username) => {
+const updateOneUser = (id, email, password,username) => {
   console.log(id);
   const userToBeUpdatedIndex = datos.users.findIndex((objeto) => {
     return objeto.id === id;

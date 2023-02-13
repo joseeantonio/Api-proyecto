@@ -14,7 +14,6 @@ const insertOneUser = (req, res, next) => {
   console.log(req.body);
 
   const { email, password,username } = req.body;
-  console.log(name);
   if (!email || !password || !username) {
     res.status(400).send("FALTAN DATOS PORA INSERTAR USUARIIOS");
     return;
