@@ -11,6 +11,12 @@
       "email": "jose@gmail.com",
       "password": "password",
       "username": "jose02"
+    },
+    {
+      "id": "efb38f70-abc6-11ed-9dc5-dfd6991470ba",
+      "email": "peri@peri.com",
+      "password": "password",
+      "username": "peri"
     }
   ]
 }

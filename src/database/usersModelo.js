@@ -14,7 +14,6 @@ const getOneUser = (id) => {
 
 const insertOneUser = (newUser) => {
   datos.users.push(newUser);
-  console.log(newUser);
   fs.writeFile(
     "./src/database/users.json",
     JSON.stringify(datos, null, 2),

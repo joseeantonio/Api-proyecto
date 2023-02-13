@@ -10,8 +10,6 @@ const getAllUsers = (req, res, next) => {
 };
 
 const insertOneUser = (req, res, next) => {
-  console.log(req.body);
-  console.log(req.body);
 
   const { email, password,username } = req.body;
   if (!email || !password || !username) {
@@ -20,10 +18,12 @@ const insertOneUser = (req, res, next) => {
   }
 
   const newUser = usersServices.insertUser( email, password,username );
+  console.log('gg')
   if (!newUser) {
     res.status(400).send("ENTRADA DUPLICADA");
     return;
   }
+
 
   res.send(newUser);
 };
