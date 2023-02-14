@@ -71,6 +71,26 @@ const deleteUser = (req, res, next) => {
   res.send(deletedUser);
 };
 
+const updateUserForUsername = (req,res,next) => {
+  console.log('gg')
+  const { username } = req.params;
+  console.log(username)
+
+
+  const { email, password,name } = req.body;
+  console.log(name)
+
+  const updateUser = usersServices.updateUserForUsername(email,password,username,name);
+
+  if (updateUser) {
+    res.json({msg:'actualizado'});
+    return;
+  }else{
+    res.json({msg:'no actualizado'})
+  }
+
+}
+
 const updateUser = (req, res, next) => {
   const { id } = req.params;
   const { email, password,username } = req.body;
@@ -87,4 +107,5 @@ module.exports = {
   deleteUser,
   updateUser,
   autenticationUser,
+  updateUserForUsername,
 };

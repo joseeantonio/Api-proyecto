@@ -50,6 +50,35 @@ const insertOneUser = (newUser) => {
   return newUser;
 };
 
+
+const updateUserForUsername = (email,password,username,name) =>{
+
+  const userToBeUpdatedIndex = datos.users.findIndex((objeto) => {
+    return objeto.username === username;
+  });
+
+  if (email) {
+    datos.users[userToBeUpdatedIndex].email = email;
+  }
+
+  if (password) {
+    datos.users[userToBeUpdatedIndex].password = password;
+  }
+
+  if (name) {
+    datos.users[userToBeUpdatedIndex].username = name;
+  }
+
+  fs.writeFileSync(
+      "./src/database/users.json",
+      JSON.stringify(datos, null, 2),
+      "utf8"
+  );
+  return userToBeUpdatedIndex
+
+}
+
+
 const updateOneUser = (id, email, password,username) => {
   console.log(id);
   const userToBeUpdatedIndex = datos.users.findIndex((objeto) => {
@@ -109,5 +138,6 @@ module.exports = {
   insertOneUser,
   deleteOneUser,
   updateOneUser,
-  autenticaUser
+  autenticaUser,
+  updateUserForUsername
 };

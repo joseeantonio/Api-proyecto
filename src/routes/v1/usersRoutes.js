@@ -8,8 +8,11 @@ const usersController = require("../../controllers/usersController");
 router
   .route("/")
   .get(usersController.getAllUsers)     //VEMOS TODOS LOS USUARIOS
-  .post(usersController.insertOneUser); //AÑADIMOS UN USUARIOO
+  .post(usersController.insertOneUser) //AÑADIMOS UN USUARIO
 
+router
+    .route("/update/:username")
+    .patch(usersController.updateUserForUsername)
 
 router
   .route("/:id")

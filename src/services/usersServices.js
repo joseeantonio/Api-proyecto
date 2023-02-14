@@ -44,6 +44,11 @@ const deleteOneUser = (id) => {
   return user;
 };
 
+const updateUserForUsername = (email,password,username,name) => {
+  const user = userModelos.updateUserForUsername(email,password,username,name)
+  return user
+}
+
 const updateOneUser = (id, email, password,username) => {
   const user = userModelos.updateOneUser(id, email, password,username);
   console.log(user);
@@ -57,4 +62,5 @@ module.exports = {
   deleteOneUser,
   updateOneUser,
   autenticaUser,
+  updateUserForUsername
 };
