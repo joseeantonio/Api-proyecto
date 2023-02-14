@@ -9,6 +9,25 @@ const getAllUsers = (req, res, next) => {
   res.send(allUsers);
 };
 
+const autenticationUser = (req,res,next) => {
+  const {username,password} = req.body;
+  if (!username || !password){
+    res.status(400).send("FALTAN DATOS PORA INSERTAR USUARIIOS");
+    return;
+  }
+
+  const user = usersServices.autenticaUser( username,password );
+  if (user) {
+    res.json({msg:'registrado'});
+    return;
+  }else{
+    res.json({msg:'no registrado'})
+  }
+
+
+}
+
+
 const insertOneUser = (req, res, next) => {
 
   const { email, password,username } = req.body;
@@ -67,4 +86,5 @@ module.exports = {
   getOneUser,
   deleteUser,
   updateUser,
+  autenticationUser,
 };

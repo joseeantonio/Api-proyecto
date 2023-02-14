@@ -17,5 +17,9 @@ router
   .delete(usersController.deleteUser)   //ELIMINAR UN USUARIO
   .patch(usersController.updateUser);   //ACTUALIZAMOS UN USUARIOO
 
+router
+    .route("/autentificacion/")
+    .post(usersController.autenticationUser)      //VER UN USUARIO
+
 
 module.exports.router = router;

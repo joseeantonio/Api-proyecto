@@ -6,6 +6,13 @@ const getUsers = () => {
   return usuarios;
 };
 
+const autenticaUser = (username,password) =>{
+
+  const oneUsuario = userModelos.autenticaUser(username,password);
+  return oneUsuario;
+
+}
+
 const insertUser = ( email, password,username ) => {
   const id = uuid();
 
@@ -16,7 +23,9 @@ const insertUser = ( email, password,username ) => {
     username
   };
 
-  if (userModelos.getOneUser(nuevoUsuario.id)) {
+
+
+  if (userModelos.getOneUser(nuevoUsuario.id,username,email)) {
     return false;
   }
 
@@ -47,4 +56,5 @@ module.exports = {
   getUser,
   deleteOneUser,
   updateOneUser,
+  autenticaUser,
 };

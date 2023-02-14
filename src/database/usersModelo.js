@@ -5,11 +5,39 @@ const getAllUsers = () => {
   return datos.users;
 };
 
-const getOneUser = (id) => {
+const autenticaUser = (username,password) => {
+
+  var allusers = datos.users
+
+
+  for (let i=0;i<allusers.length;i++){
+    console.log(allusers[i])
+    if (allusers[i].password===password && allusers[i].username===username){
+      return allusers[i]
+    }
+  }
+
+}
+
+const getOneUser = (id,username,email) => {
   var user = datos.users.find((objeto) => {
     return objeto.id === id;
   });
-  return user
+  if (!user){
+    var user = datos.users.find((objeto) => {
+      return objeto.username === username;
+    });
+    return user
+  }else if(!email){
+    var user = datos.users.find((objeto) => {
+      return objeto.email === email;
+    });
+    return user
+  }
+  else{
+    return user
+  }
+
 };
 
 const insertOneUser = (newUser) => {
@@ -81,4 +109,5 @@ module.exports = {
   insertOneUser,
   deleteOneUser,
   updateOneUser,
+  autenticaUser
 };
