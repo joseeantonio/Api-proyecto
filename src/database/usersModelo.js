@@ -14,13 +14,10 @@ const getOneUser = (id) => {
 
 const insertOneUser = (newUser) => {
   datos.users.push(newUser);
-  fs.writeFile(
+  fs.writeFileSync(
     "./src/database/users.json",
     JSON.stringify(datos, null, 2),
-    "utf8",
-    (err) => {
-      throw new Error("ERROR AL INSERTAR USUARIO");
-    }
+    "utf8"
   );
   return newUser;
 };

@@ -17,6 +17,12 @@
       "email": "peri@peri.com",
       "password": "password",
       "username": "peri"
+    },
+    {
+      "id": "7a5d2640-abc7-11ed-9517-531dfd79d998",
+      "email": "pp@pp.com",
+      "password": "password",
+      "username": "pepe"
     }
   ]
 }
