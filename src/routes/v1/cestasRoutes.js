@@ -13,6 +13,6 @@ router
 
 router
     .route("/:username")
-    .post(cestasController.getOneCesta)
+    .get(cestasController.getOneCesta)
 
 module.exports.router = router
