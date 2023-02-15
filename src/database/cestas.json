@@ -13,6 +13,20 @@
           "cantidad": 1
         }
       ]
+    },
+    {
+      "id": "48s24480     -a6f3-11ed-9765-81a6d4d08d38",
+      "username": "peri",
+      "productos": [
+        {
+          "id": "d4230590-a7a9-11ed-ad06-6f5a2216e7e3",
+          "cantidad": 1
+        },
+        {
+          "id": "d492de60-a7a9-11ed-8ebf-e968c85e29df",
+          "cantidad": 2
+        }
+      ]
     }
   ]
 }

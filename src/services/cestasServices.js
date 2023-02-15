@@ -9,6 +9,21 @@ const getAllCestas = () => {
 
 }
 
+
+const insertOneCelda = (username) => {
+
+    const id = uuid();
+
+    if (cestasModelo.getOneCesta(username)) {
+        return false;
+    }
+
+    const insertedProduct = cestasModelo.insertOneCesta(username,id);
+    return insertedProduct;
+
+}
+
+
 const getOneCesta = (username) => {
     const cesta = cestasModelo.getOneCesta(username);
     return cesta;
@@ -18,4 +33,5 @@ const getOneCesta = (username) => {
 module.exports = {
     getAllCestas,
     getOneCesta,
+    insertOneCelda,
 };

@@ -16,9 +16,16 @@ const getOneCesta=(username)=>{
 
 }
 
+const insertOneCesta = (username,id)=>{
+
+    datos.cestas.push
+
+}
+
 
 
 module.exports = {
     getAllCestas,
     getOneCesta,
+    insertOneCesta,
 };
