@@ -9,7 +9,13 @@ const getAllCestas = () => {
 
 }
 
+const getOneCesta = (username) => {
+    const cesta = cestasModelo.getOneCesta(username);
+    return cesta;
+}
+
 
 module.exports = {
     getAllCestas,
+    getOneCesta,
 };

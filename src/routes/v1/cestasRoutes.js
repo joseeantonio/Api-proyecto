@@ -11,4 +11,8 @@ router
     .get(cestasController.getAllcestas);     //VEMOS TODAS LAS CESTAS
 
 
+router
+    .route("/:username")
+    .post(cestasController.getOneCesta)
+
 module.exports.router = router

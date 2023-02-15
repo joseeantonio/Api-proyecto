@@ -6,7 +6,15 @@ const getAllCestas = () => {
 }
 
 
+const getOneCesta=(username)=>{
+
+
+
+}
+
+
 
 module.exports = {
     getAllCestas,
+    getOneCesta,
 };
