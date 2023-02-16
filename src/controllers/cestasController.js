@@ -43,6 +43,20 @@ const getOneCesta = (req,res,next) => {
 }
 
 
+const postInsertProductInCesta = (req,res,next) => {
+
+    const { idProductousername } = req.params;
+
+    const cesta = cestasServices.insertProductCesta(idProductousername);
+    if (!cesta) {
+        res.status(404).send("NO EXISTE CESTA CON ESE USERNAME");
+        return;
+    }
+    res.send(cesta);
+
+}
+
+
 
 
 
@@ -50,4 +64,5 @@ module.exports = {
     getAllcestas,
     getOneCesta,
     insertCesta,
+    postInsertProductInCesta,
 };

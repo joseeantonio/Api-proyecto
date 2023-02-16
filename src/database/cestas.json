@@ -15,8 +15,8 @@
       ]
     },
     {
-      "id": "48s24480     -a6f3-11ed-9765-81a6d4d08d38",
-      "username": "peri",
+      "id": "48s24480-a6f3-11ed-9765-81a6d4d08d38",
+      "username": "peri02",
       "productos": [
         {
           "id": "d4230590-a7a9-11ed-ad06-6f5a2216e7e3",
@@ -25,13 +25,11 @@
         {
           "id": "d492de60-a7a9-11ed-8ebf-e968c85e29df",
           "cantidad": 2
+        },
+        {
+          "id": "4996c4c0-a9ac-11ed-b13d-bf17a3a9f2d5"
         }
       ]
-    },
-    {
-      "id": "9eeb2930-adde-11ed-9cf2-7b38ce36a963",
-      "username": "pepe",
-      "productos": []
     }
   ]
 }

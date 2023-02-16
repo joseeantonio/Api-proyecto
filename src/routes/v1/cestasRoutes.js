@@ -16,8 +16,8 @@ router
     .get(cestasController.getOneCesta)
     .post(cestasController.insertCesta)
 
-// router
-//     .route("añadirProducto/cesta/:idProducto*username")
-//     .post(cestasController.postInsertProductInCesta)
+router
+    .route("/anadirProducto/cesta/:idProductousername")      //separados por * ej: 11s2s31*peri02
+    .post(cestasController.postInsertProductInCesta)
 
 module.exports.router = router
