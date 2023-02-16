@@ -15,12 +15,12 @@ const insertCesta = (req,res,next) =>{
 
     const { username } = req.params;
 
-    if(username){
+    if(!username){
         res.status(400).send("FALTAN DATOS")
         return
     }
 
-    const newCesta =cestasServices.insertOneCelda(username)
+    const newCesta =cestasServices.insertOneCesta(username)
     if(!newCesta){
         res.status(400).send("ENTRADA DUPLICADA");
         return

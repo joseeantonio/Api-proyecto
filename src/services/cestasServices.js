@@ -10,7 +10,7 @@ const getAllCestas = () => {
 }
 
 
-const insertOneCelda = (username) => {
+const insertOneCesta = (username) => {
 
     const id = uuid();
 
@@ -33,5 +33,5 @@ const getOneCesta = (username) => {
 module.exports = {
     getAllCestas,
     getOneCesta,
-    insertOneCelda,
+    insertOneCesta,
 };

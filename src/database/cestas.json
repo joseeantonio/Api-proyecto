@@ -27,6 +27,11 @@
           "cantidad": 2
         }
       ]
+    },
+    {
+      "id": "9eeb2930-adde-11ed-9cf2-7b38ce36a963",
+      "username": "pepe",
+      "productos": []
     }
   ]
 }

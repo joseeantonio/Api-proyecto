@@ -18,7 +18,24 @@ const getOneCesta=(username)=>{
 
 const insertOneCesta = (username,id)=>{
 
-    datos.cestas.push
+    const cesta = {
+        id,
+        username,
+        productos: []
+    }
+
+    datos.cestas.push(cesta)
+
+    fs.writeFile(
+        "./src/database/cestas.json",
+        JSON.stringify(datos, null, 2),
+        "utf8",
+        (err) => {
+            throw new Error("ERROR AL ESCRIBIR");
+        }
+    );
+
+    return cesta;
 
 }
 
