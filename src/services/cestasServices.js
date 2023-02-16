@@ -40,8 +40,17 @@ const insertProductCesta = (idProductousername) => {
 
     const insertedProduct = cestasModelo.insertProductCesta(username,idProducto);
     return insertedProduct;
+}
+
+
+const getProducts = (username) => {
+
+    const products = cestasModelo.getProducts(username)
+    return products;
 
 }
+
+
 
 
 module.exports = {
@@ -49,4 +58,5 @@ module.exports = {
     getOneCesta,
     insertOneCesta,
     insertProductCesta,
+    getProducts,
 };

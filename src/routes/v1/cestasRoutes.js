@@ -17,6 +17,10 @@ router
     .post(cestasController.insertCesta)
 
 router
+    .route("/productosCesta/:username")
+    .get(cestasController.getProductsCesta)
+
+router
     .route("/anadirProducto/cesta/:idProductousername")      //separados por * ej: 11s2s31*peri02
     .post(cestasController.postInsertProductInCesta)
 

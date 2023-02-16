@@ -89,10 +89,33 @@ const insertProductCesta = (username,idProducto) => {
 }
 
 
+const getProducts = (username) => {
+
+    const cestaUsername = getOneCesta(username)
+
+    const arrObjetos = []
+
+    // console.log(cestaUsername.productos.length)
+    // console.log(datosProductos.productos.length)
+
+    for (let i=0;i<cestaUsername.productos.length;i++){
+        for (let x=0;x<datosProductos.productos.length;x++){
+            if (cestaUsername.productos[i].id===datosProductos.productos[x].id){
+                arrObjetos.push(datosProductos.productos[x])
+            }
+        }
+    }
+    // console.log('gg')
+    return arrObjetos
+}
+
+
+
 
 module.exports = {
     getAllCestas,
     getOneCesta,
     insertOneCesta,
     insertProductCesta,
+    getProducts,
 };

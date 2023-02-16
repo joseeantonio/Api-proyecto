@@ -53,6 +53,16 @@ const postInsertProductInCesta = (req,res,next) => {
         return;
     }
     res.send(cesta);
+}
+
+
+const getProductsCesta = (req,res,next) => {
+
+    const { username } = req.params;
+
+    const products = cestasServices.getProducts(username);
+
+    res.send(products);
 
 }
 
@@ -65,4 +75,5 @@ module.exports = {
     getOneCesta,
     insertCesta,
     postInsertProductInCesta,
+    getProductsCesta,
 };
