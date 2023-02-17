@@ -101,6 +101,7 @@ const getProducts = (username) => {
     for (let i=0;i<cestaUsername.productos.length;i++){
         for (let x=0;x<datosProductos.productos.length;x++){
             if (cestaUsername.productos[i].id===datosProductos.productos[x].id){
+                datosProductos.productos[x].cantidad = cestaUsername.productos[i].cantidad
                 arrObjetos.push(datosProductos.productos[x])
             }
         }
