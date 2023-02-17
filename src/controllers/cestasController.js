@@ -67,6 +67,20 @@ const getProductsCesta = (req,res,next) => {
 }
 
 
+const deleteProductCesta = (req,res,next) => {
+
+    const { idProductousername } = req.params;
+
+    const cesta = cestasServices.deleteProductCesta(idProductousername);
+    if (!cesta) {
+        res.status(404).send("NO EXISTE PRODUCTO EN LA CESTA");
+        return;
+    }
+    res.send(cesta);
+
+}
+
+
 
 
 
@@ -76,4 +90,5 @@ module.exports = {
     insertCesta,
     postInsertProductInCesta,
     getProductsCesta,
+    deleteProductCesta,
 };

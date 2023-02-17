@@ -23,5 +23,6 @@ router
 router
     .route("/anadirProducto/cesta/:idProductousername")      //separados por * ej: 11s2s31*peri02
     .post(cestasController.postInsertProductInCesta)
+    .delete(cestasController.deleteProductCesta)
 
 module.exports.router = router

@@ -50,6 +50,21 @@ const getProducts = (username) => {
 
 }
 
+const deleteProductCesta = (idProductousername) => {
+
+    const idProductousernamesplit = idProductousername.split("*")
+    const username = idProductousernamesplit[1]
+    const idProducto = idProductousernamesplit[0]
+
+    if (!cestasModelo.getOneCesta(username)) {
+        return false;
+    }
+
+    const deleteProduct = cestasModelo.deleteProductCesta(username,idProducto);
+    return deleteProduct;
+
+}
+
 
 
 
@@ -59,4 +74,5 @@ module.exports = {
     insertOneCesta,
     insertProductCesta,
     getProducts,
+    deleteProductCesta,
 };
