@@ -14,7 +14,7 @@
     },
     {
       "id": "efb38f70-abc6-11ed-9dc5-dfd6991470ba",
-      "email": "peri@peri.com",
+      "email": "periperi@peri.com",
       "password": "password",
       "username": "peri02"
     },
@@ -23,6 +23,12 @@
       "email": "pp@pp.com",
       "password": "password",
       "username": "pepe"
+    },
+    {
+      "id": "4c91afa0-af1a-11ed-bfab-b9f6c393546b",
+      "email": "pepito@pepito.es",
+      "password": "password",
+      "username": "pepito"
     }
   ]
 }

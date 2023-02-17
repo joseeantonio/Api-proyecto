@@ -1,5 +1,7 @@
 const datos = require("./users.json");
 const fs = require("fs");
+const {insertOneCesta} = require("./cestasModelo");
+const {v1: uuid} = require("uuid");
 
 const getAllUsers = () => {
   return datos.users;
@@ -47,6 +49,8 @@ const insertOneUser = (newUser) => {
     JSON.stringify(datos, null, 2),
     "utf8"
   );
+  const id = uuid();
+  insertOneCesta(newUser.username,id)
   return newUser;
 };
 
