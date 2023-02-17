@@ -19,10 +19,6 @@
       "username": "peri02",
       "productos": [
         {
-          "id": "d4230590-a7a9-11ed-ad06-6f5a2216e7e3",
-          "cantidad": 1
-        },
-        {
           "id": "4996c4c0-a9ac-11ed-b13d-bf17a3a9f2d5",
           "cantidad": 2
         }

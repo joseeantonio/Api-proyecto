@@ -121,7 +121,20 @@ const deleteProductCesta = (username,idProducto) => {
                     existe=true
 
                     if (datos.cestas[i].productos[x].cantidad===1){
-                        delete datos.cestas[i].productos[x]
+                        // delete datos.cestas[i].productos[x]
+                        // fs.writeFile(
+                        //     "./src/database/cestas.json",
+                        //     JSON.stringify(datos, null, 2),
+                        //     "utf8",
+                        //     (err) => {
+                        //         throw new Error("ERROR AL ESCRIBIR");
+                        //     }
+                        // );
+                        // return datos.cestas[i]
+                        const newArr = datos.cestas[i].productos.filter(function (item) {
+                            return item.id !== datos.cestas[i].productos[x].id;
+                        });
+                        datos.cestas[i].productos=newArr
                         fs.writeFile(
                             "./src/database/cestas.json",
                             JSON.stringify(datos, null, 2),
@@ -133,12 +146,8 @@ const deleteProductCesta = (username,idProducto) => {
                         return datos.cestas[i]
                     }
                     else{
-                        // datos.cestas[i].productos[x].cantidad-=1
-                        // return datos.cestas[i]
-                        const newArr = datos.cestas[i].productos.filter(function (item) {
-                            return item.id !== datos.cestas[i].productos[x].id;
-                        });
-                        datos.cestas[i].productos=newArr
+                        datos.cestas[i].productos[x].cantidad-=1
+                        return datos.cestas[i]
                         fs.writeFile(
                             "./src/database/cestas.json",
                             JSON.stringify(datos, null, 2),
