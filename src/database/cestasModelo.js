@@ -114,24 +114,10 @@ const deleteProductCesta = (username,idProducto) => {
 
     for (let i=0; i<datos.cestas.length; i++){
         if (datos.cestas[i].username===username){
-
-            let existe = false
             for (let x=0;x<datos.cestas[i].productos.length;x++){
                 if (datos.cestas[i].productos[x].id===idProducto){
 
-                    existe=true
-
                     if (datos.cestas[i].productos[x].cantidad===1){
-                        // delete datos.cestas[i].productos[x]
-                        // fs.writeFile(
-                        //     "./src/database/cestas.json",
-                        //     JSON.stringify(datos, null, 2),
-                        //     "utf8",
-                        //     (err) => {
-                        //         throw new Error("ERROR AL ESCRIBIR");
-                        //     }
-                        // );
-                        // return datos.cestas[i]
                         const newArr = datos.cestas[i].productos.filter(function (item) {
                             return item.id !== datos.cestas[i].productos[x].id;
                         });
@@ -144,29 +130,17 @@ const deleteProductCesta = (username,idProducto) => {
                                 throw new Error("ERROR AL ESCRIBIR");
                             }
                         );
-                        return datos.cestas[i]
                     }
                     else{
                         datos.cestas[i].productos[x].cantidad-=1
-                        return datos.cestas[i]
-                        fs.writeFile(
-                            "./src/database/cestas.json",
-                            JSON.stringify(datos, null, 2),
-                            "utf8",
-                            (err) => {
-                                throw new Error("ERROR AL ESCRIBIR");
-                            }
-                        );
-                        return datos.cestas[i]
                     }
 
                 }
             }
-            if (!existe){
-                return false
-            }
         }
     }
+
+    return getProducts(username);
 
 }
 

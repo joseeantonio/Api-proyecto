@@ -3,10 +3,15 @@ const app = express();
 const cookieParser = require("cookie-parser");
 const v1 = require("./routes/v1/indexRoutes");
 const auth = require("./utils/authentication");
-const cors = require('cors')
 
 app.use(express.json());
-app.use(cors())
+const cors = require('cors');
+app.use(cors({
+  "origin": "*",
+  "methods": "GET,HEAD,PUT,PATCH,POST,DELETE",
+  "preflightContinue": true,
+  "optionsSuccessStatus": 204
+}));
 app.use(cookieParser());
 app.use((req, res, next) => {
   let date = new Date().toLocaleTimeString();
