@@ -11,6 +11,18 @@
       "email": "periperi@peri.com",
       "password": "password",
       "username": "peri02"
+    },
+    {
+      "id": "0ba5ca80-afa6-11ed-923a-2518c4db252b",
+      "email": "perico@pp.com",
+      "password": "passwordperico",
+      "username": "perico"
+    },
+    {
+      "id": "96349ea0-afac-11ed-8728-d723a88bc7ef",
+      "email": "sergio@gmail.com",
+      "password": "passwordsergio",
+      "username": "sergio"
     }
   ]
 }

@@ -4,7 +4,7 @@
       "id": "d4230590-a7a9-11ed-ad06-6f5a2216e7e3",
       "size": 300,
       "name": "prensa",
-      "description": "es para las piernecitas",
+      "description": "La prensa de piernas es una máquina que permite realizar un trabajo de fuerza global del tren inferior, es decir, que involucra prácticamente toda la musculatura de las piernas: cuádriceps, isquiosurales, glúteos… Además, la musculatura de la cadera y el core también se activa para estabilizar la pelvis durante el movimiento.\n\nEsto hace de la prensa de piernas una máquina de musculación muy completa, por lo que es indispensable para cualquier gimnasio y/o estudio de entrenamiento personal orientado al fitness o entrenamiento de fuerza en general.\n\nEn las siguientes líneas vamos a analizar los diferentes tipos de prensas que podemos encontrar en Bodytone, las virtudes de cada modelo, y diferencias entre cada una de ellas.",
       "image": "https://i.imgur.com/sDGYMgR.png",
       "category": "peso guiado",
       "marca": "Matrix"
@@ -13,7 +13,7 @@
       "id": "d492de60-a7a9-11ed-8ebf-e968c85e29df",
       "size": 300,
       "name": "Squat",
-      "description": "banquito",
+      "description": "El squat o la sentadilla es un movimiento global en el que partimos en bipedestación (de pie), realizamos una triple flexión (tobillo, rodilla y cadera), bajamos la cadera hasta una altura determinada y gracias a una triple extensión de las articulaciones anteriores volvemos a la posición original. Es sin duda uno de los ejercicios top para la mejora de la fuerza, de la potencia y para el aumento de la masa muscular.",
       "image": "https://i.imgur.com/guDFVTP.png",
       "category": "peso guiado",
       "marca": "Hammer"
@@ -22,7 +22,7 @@
       "id": "b1003e20-a7d1-11ed-a290-772390db3dc2",
       "size": 3500,
       "name": "Remo con discos",
-      "description": "pechito pechito",
+      "description": "Un remo es un ejercicio compuesto de tipo tirón que funciona principalmente en la parte media de la espalda, pero también funciona con el lateral y los músculos de los brazos.",
       "image": "https://i.imgur.com/AHzwx0w.png",
       "category": "peso guiado",
       "marca": "Hammer"
@@ -31,7 +31,7 @@
       "id": "b1003e20-a7d1-11ed-a290-772390db3dc3",
       "size": 3500,
       "name": "Rack Squat",
-      "description": "pechito pechito",
+      "description": "El Rack Squat es un imprescindible en tu gym. El Rack de sentadillas es una estructura imprescindible en tu instalación por su versatilidad. Permite acoplar un banco regulable para entrenar pecho y hombro, y realizar todo tipo de ejercicios tipo press, sentadillas, fondos, etc.",
       "image": "https://i.imgur.com/xPBHj33.jpg",
       "category": "peso libre",
       "marca": "Hammer"
@@ -40,7 +40,7 @@
       "id": "b1003e20-a7d1-11ed-a290-7723904db3dc2",
       "size": 3500,
       "name": "Rack",
-      "description": "pechito pechito",
+      "description": "Probablemente una de las principales razones para utilizar un rack es la seguridad. Cuando se realizan movimientos como el levantamiento en un banco plano o la sentadilla y lo haces tú mismo sin la ayuda de un observador, tener un rack se convierte en esencial.",
       "image": "https://i.imgur.com/mFyQGUj.png",
       "category": "peso libre",
       "marca": "Matrix"
@@ -49,7 +49,7 @@
       "id": "b1003e20-a7d1-11ed-a2950-772390db3dc2",
       "size": 3500,
       "name": "Press Banca Plano",
-      "description": "pechito pechito",
+      "description": "El press de banca, press de pecho, fuerza en banco, fuerza acostado o press banca, es un ejercicio de peso libre que trabaja principalmente la zona superior del cuerpo.",
       "image": "https://i.imgur.com/T0rDAO2.png",
       "category": "peso libre",
       "marca": "Matrix"
@@ -58,7 +58,7 @@
       "id": "b1003e20-a7d1-11ed-a2930-772390db3dc2",
       "size": 3500,
       "name": "Press Banca Inclinado",
-      "description": "pechito pechito",
+      "description": "Con referencia a su nombre, el press inclinado se enfoca en la parte superior del pecho, mayormente en la parte de arriba del pectoral mayor, que está compuesto de las cabezas clavicular y esternocostal, también conocidos como el pecho superior e inferior.",
       "image": "https://i.imgur.com/ttlC80I.png",
       "category": "peso libre",
       "marca": "Matrix"
@@ -67,7 +67,7 @@
       "id": "b1003e20-a7d1-511ed-a290-772390db3dc2",
       "size": 3500,
       "name": "Press Banca Plano",
-      "description": "pechito pechito",
+      "description": "El press de banca, press de pecho, fuerza en banco, fuerza acostado o press banca, es un ejercicio de peso libre que trabaja principalmente la zona superior del cuerpo.",
       "image": "https://i.imgur.com/wSJVS24.png",
       "category": "peso libre",
       "marca": "Hammer"
@@ -76,7 +76,7 @@
       "id": "b1003e20-a76d1-11ed-a290-772390db3dc2",
       "size": 3500,
       "name": "Press Banca Declinado",
-      "description": "pechito pechito",
+      "description": "Mientras el press inclinado se concentra en la parte superior de los músculos del pecho, el press declinado toma tus pies en el aire y trabaja la parte inferior de tus pectorales. Debido a su naturaleza invertida, el press declinado es subestimado en comparación con el press inclinado y el press plano.",
       "image": "https://i.imgur.com/JRxSwXd.png",
       "category": "peso libre",
       "marca": "Matrix"
@@ -85,7 +85,7 @@
       "id": "b1003e20-a77d1-11ed-a290-772390db3dc2",
       "size": 3500,
       "name": "Prensa Pendular",
-      "description": "pechito pechito",
+      "description": "La prensa de piernas es una máquina que permite realizar un trabajo de fuerza global del tren inferior, es decir, que involucra prácticamente toda la musculatura de las piernas: cuádriceps, isquiosurales, glúteos… Además, la musculatura de la cadera y el core también se activa para estabilizar la pelvis durante el movimiento.\n\nEsto hace de la prensa de piernas una máquina de musculación muy completa, por lo que es indispensable para cualquier gimnasio y/o estudio de entrenamiento personal orientado al fitness o entrenamiento de fuerza en general.\n\nEn las siguientes líneas vamos a analizar los diferentes tipos de prensas que podemos encontrar en Bodytone, las virtudes de cada modelo, y diferencias entre cada una de ellas.",
       "image": "https://i.imgur.com/AZqzjMQ.png",
       "category": "peso guiado",
       "marca": "Hammer"
@@ -94,7 +94,7 @@
       "id": "b1003e20-a7d51-11ed-a290-772390db3dc1",
       "size": 3500,
       "name": "Prensa",
-      "description": "pechito pechito",
+      "description": "La prensa de piernas es una máquina que permite realizar un trabajo de fuerza global del tren inferior, es decir, que involucra prácticamente toda la musculatura de las piernas: cuádriceps, isquiosurales, glúteos… Además, la musculatura de la cadera y el core también se activa para estabilizar la pelvis durante el movimiento.\n\nEsto hace de la prensa de piernas una máquina de musculación muy completa, por lo que es indispensable para cualquier gimnasio y/o estudio de entrenamiento personal orientado al fitness o entrenamiento de fuerza en general.\n\nEn las siguientes líneas vamos a analizar los diferentes tipos de prensas que podemos encontrar en Bodytone, las virtudes de cada modelo, y diferencias entre cada una de ellas.",
       "image": "https://i.imgur.com/sDGYMgR.png",
       "category": "peso guiado",
       "marca": "Matrix"
@@ -103,7 +103,7 @@
       "id": "b1003e320-a7d1-11ed-a290-772390db3dc1",
       "size": 3500,
       "name": "Predicador Biceps",
-      "description": "pechito pechito",
+      "description": "Para hacerlo debemos tomar una barra recta, W o E-Z a gusto y sentarnos en el banco; tomar la barra a una separación media entre manos, y flexionar, manteniendo en todo momento las axilas en el filo del apoyo del banco.",
       "image": "https://i.imgur.com/qbbU8NJ.png",
       "category": "peso libre",
       "marca": "Hammer"
@@ -112,7 +112,7 @@
       "id": "b1003e420-a7d1-11ed-a290-772390db3dc2",
       "size": 3500,
       "name": "Power Rack",
-      "description": "pechito pechito",
+      "description": "Un power rack de fabricación 100% española que combina robustez (acero de 3 mm de grosor y tornillería de 14mm), con accesorios de alta calidad y posibilidad de ajustar las dimensiones y acabado a las necesidades del cliente. Preparada para los usos más exigentes. Disponible en varias versiones.7",
       "image": "https://i.imgur.com/DCFefvP.png",
       "category": "peso libre",
       "marca": "Matrix"

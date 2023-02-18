@@ -17,6 +17,26 @@
     {
       "id": "48s24480-a6f3-11ed-9765-81a6d4d08d38",
       "username": "peri02",
+      "productos": [
+        {
+          "id": "d492de60-a7a9-11ed-8ebf-e968c85e29df",
+          "cantidad": 1
+        }
+      ]
+    },
+    {
+      "id": "0ba5f190-afa6-11ed-923a-2518c4db252b",
+      "username": "perico",
+      "productos": [
+        {
+          "id": "d492de60-a7a9-11ed-8ebf-e968c85e29df",
+          "cantidad": 1
+        }
+      ]
+    },
+    {
+      "id": "9634c5b0-afac-11ed-8728-d723a88bc7ef",
+      "username": "sergio",
       "productos": []
     }
   ]
