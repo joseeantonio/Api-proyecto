@@ -7,28 +7,10 @@
       "username": "josefina02"
     },
     {
-      "id": "5ae87180-a6f3-11ed-bf15-6fe95562dcaf",
-      "email": "jose@gmail.com",
-      "password": "passwordjose",
-      "username": "jose"
-    },
-    {
       "id": "efb38f70-abc6-11ed-9dc5-dfd6991470ba",
       "email": "periperi@peri.com",
       "password": "password",
       "username": "peri02"
-    },
-    {
-      "id": "7a5d2640-abc7-11ed-9517-531dfd79d998",
-      "email": "pp@pp.com",
-      "password": "password",
-      "username": "pepe"
-    },
-    {
-      "id": "4c91afa0-af1a-11ed-bfab-b9f6c393546b",
-      "email": "pepito@pepito.es",
-      "password": "password",
-      "username": "pepito"
     }
   ]
 }
