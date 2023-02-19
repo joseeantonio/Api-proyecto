@@ -22,7 +22,6 @@ router
 
 router
     .route("/autentificacion/")
-    .post(usersController.autenticationUser)      //VER UN USUARIO
-
+    .post(usersController.autenticationUser)
 
 module.exports.router = router;
