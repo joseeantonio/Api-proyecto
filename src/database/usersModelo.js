@@ -23,28 +23,25 @@ const autenticaUser = (username,password) => {
 
 const getOneUser = (id,username,email) => {
   var user = datos.users.find((objeto) => {
-    return objeto.id === id;
+    return objeto.id === id || objeto.username === id;
   });
-  if (!user){
-    var user = datos.users.find((objeto) => {
-      return objeto.username === username;
-    });
-    return user
-  }else if(!email){
-    var user = datos.users.find((objeto) => {
-      return objeto.email === email;
-    });
-    return user
-  }
-  else{
-    return user
-  }
-
+  return user
 };
 
 const comprobarInsertar = (newUser) => {
   var user = datos.users.find((objeto) => {
     return objeto.username === newUser.username || objeto.email === newUser.email;
+  });
+  if (user){
+    return false
+  }else{
+    return true
+  }
+}
+
+const comprobarActualizar = (newUser) => {
+  var user = datos.users.find((objeto) => {
+    return objeto.email === newUser.email;
   });
   if (user){
     return false
@@ -156,5 +153,6 @@ module.exports = {
   updateOneUser,
   autenticaUser,
   updateUserForUsername,
-  comprobarInsertar
+  comprobarInsertar,
+  comprobarActualizar
 };

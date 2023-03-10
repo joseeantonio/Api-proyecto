@@ -45,8 +45,20 @@ const deleteOneUser = (id) => {
 };
 
 const updateUserForUsername = (email,password,username,name) => {
-  const user = userModelos.updateUserForUsername(email,password,username,name)
-  return user
+
+  const nuevoUsuario = {
+    email,
+    password,
+    username
+  };
+  console.log(nuevoUsuario)
+  if (!userModelos.comprobarActualizar(nuevoUsuario)) {
+    console.log('f')
+    return false;
+  }else {
+    const user = userModelos.updateUserForUsername(email,password,username,name)
+    return user
+  }
 }
 
 const updateOneUser = (id, email, password,username) => {

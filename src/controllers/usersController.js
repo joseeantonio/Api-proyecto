@@ -71,13 +71,11 @@ const deleteUser = (req, res, next) => {
 };
 
 const updateUserForUsername = (req,res,next) => {
-  console.log('gg')
   const { username } = req.params;
   console.log(username)
 
 
   const { email, password,name } = req.body;
-  console.log(name)
 
   const updateUser = usersServices.updateUserForUsername(email,password,username,name);
 
