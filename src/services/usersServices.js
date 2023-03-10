@@ -1,5 +1,6 @@
 const userModelos = require("../database/usersModelo.js");
 const { v1: uuid } = require("uuid");
+const datos = require("../database/users.json");
 
 const getUsers = () => {
   const usuarios = userModelos.getAllUsers();
@@ -23,14 +24,13 @@ const insertUser = ( email, password,username ) => {
     username
   };
 
-
-
-  if (userModelos.getOneUser(nuevoUsuario.id,username,email)) {
+  if (!userModelos.comprobarInsertar(nuevoUsuario)) {
     return false;
+  }else{
+    const usuarioInsertado = userModelos.insertOneUser(nuevoUsuario);
+    return usuarioInsertado;
   }
 
-  const usuarioInsertado = userModelos.insertOneUser(nuevoUsuario);
-  return usuarioInsertado;
 };
 
 const getUser = (id) => {

@@ -37,9 +37,9 @@ const insertOneUser = (req, res, next) => {
   }
 
   const newUser = usersServices.insertUser( email, password,username );
-  console.log('gg')
   if (!newUser) {
-    res.status(400).send("ENTRADA DUPLICADA");
+    console.log(newUser)
+    res.json({msg:'entrada duplicada'});
     return;
   }
 
@@ -50,7 +50,6 @@ const insertOneUser = (req, res, next) => {
 const getOneUser = (req, res, next) => {
   const { id } = req.params;
 
-  debugger
   const oneUser = usersServices.getUser(id);
   if (!oneUser) {
     res.status(404).send("NO ENCONTRADO");

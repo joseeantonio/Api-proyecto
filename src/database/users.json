@@ -23,6 +23,12 @@
       "email": "sergio@gmail.com",
       "password": "passwordsergio",
       "username": "sergio"
+    },
+    {
+      "id": "feb142a0-bf1d-11ed-a705-25071d82c305",
+      "email": "peri@peri.com",
+      "password": "password",
+      "username": "pp"
     }
   ]
 }

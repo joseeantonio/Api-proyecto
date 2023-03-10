@@ -42,7 +42,19 @@ const getOneUser = (id,username,email) => {
 
 };
 
+const comprobarInsertar = (newUser) => {
+  var user = datos.users.find((objeto) => {
+    return objeto.username === newUser.username || objeto.email === newUser.email;
+  });
+  if (user){
+    return false
+  }else{
+    return true
+  }
+}
+
 const insertOneUser = (newUser) => {
+
   datos.users.push(newUser);
   fs.writeFileSync(
     "./src/database/users.json",
@@ -143,5 +155,6 @@ module.exports = {
   deleteOneUser,
   updateOneUser,
   autenticaUser,
-  updateUserForUsername
+  updateUserForUsername,
+  comprobarInsertar
 };
